@@ -1,0 +1,28 @@
+{
+  "name": "finaldialog",
+  "version": "1.0.0",
+  "description": "Javascript drop-in replacement for alert, confirm, prompt.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -f iife -i src/index.js -o dist/finaldialog.js -n filedialog",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucafabbian/finaldialog.git"
+  },
+  "keywords": [
+    "alert",
+    "confirm",
+    "prompt"
+  ],
+  "author": "Luca Fabbian <luca.fabbian.1999@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucafabbian/finaldialog/issues"
+  },
+  "homepage": "https://github.com/lucafabbian/finaldialog#readme",
+  "devDependencies": {
+    "rollup": "^2.79.0"
+  }
+}
