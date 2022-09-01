@@ -1,4 +1,4 @@
-var filedialog = (function (exports) {
+var finaldialog = (function (exports) {
   'use strict';
 
   const style = document.createElement('style');
@@ -13,8 +13,7 @@ var filedialog = (function (exports) {
 
   const dialog = document.createElement("dialog");
   dialog.id = 'finaldialog';
-  document.body.appendChild(dialog);
-
+  window.addEventListener('DOMContentLoaded', () => document.body.appendChild(dialog));
 
 
   const alert = (text) => new Promise( (resolve) => {

@@ -10,8 +10,7 @@ document.head.append(style);
 
 const dialog = document.createElement("dialog");
 dialog.id = 'finaldialog'
-document.body.appendChild(dialog)
-
+window.addEventListener('DOMContentLoaded', () => document.body.appendChild(dialog))
 
 
 export const alert = (text) => new Promise( (resolve) => {

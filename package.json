@@ -4,7 +4,7 @@
   "description": "Javascript drop-in replacement for alert, confirm, prompt.",
   "main": "index.js",
   "scripts": {
-    "build": "rollup -f iife -i src/index.js -o dist/finaldialog.js -n filedialog",
+    "build": "rollup -f iife -i src/index.js -o dist/finaldialog.js -n finaldialog",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
