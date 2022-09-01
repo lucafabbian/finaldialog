@@ -39,11 +39,11 @@ export const confirm = (text) => new Promise( (resolve) => {
   })
 
 
-export const prompt = (text) => new Promise( (resolve) => {
+export const prompt = (text, options = {}) => new Promise( (resolve) => {
     dialog.innerHTML = `
     <p>${text || ''}</p>
     <form method="dialog">
-      <input name="text" type="text">
+      <input name="text" type="text" value="${options.value || ''}" placeholder="${options.placeholder || ''}">
       <button value="ok" class="main">Ok</button>
       <button value="cancel">Cancel</button>
     </form>
